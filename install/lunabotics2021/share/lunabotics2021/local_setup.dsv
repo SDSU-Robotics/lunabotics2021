@@ -1,2 +1,1 @@
-source;share/lunabotics2021/environment/ament_prefix_path.bat
-source;share/lunabotics2021/environment/path.bat
+F:/dev/colcon_ws/src/lunabotics2021/build/lunabotics2021/ament_cmake_environment_hooks/local_setup.dsv

@@ -19,15 +19,19 @@ class listen : public rclcpp::Node
           RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
       }
 
-        rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscriber;
+      rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscriber;
 
 };
 
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
-
-    rclcpp::spin(std::make_shared<listen>());
+    
+    while(rclcpp::ok)
+    {
+      rclcpp::spin(std::make_shared<listen>());
+      rclcpp::RCLCPP_INFO(listen->get_logger(), "Running");
+    }
 
     rclcpp::shutdown();
 
