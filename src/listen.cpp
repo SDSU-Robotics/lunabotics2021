@@ -30,7 +30,6 @@ int main(int argc, char * argv[])
     while(rclcpp::ok)
     {
       rclcpp::spin(std::make_shared<listen>());
-      rclcpp::RCLCPP_INFO(listen->get_logger(), "Running");
     }
 
     rclcpp::shutdown();

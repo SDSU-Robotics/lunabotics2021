@@ -1,0 +1,4 @@
+Invoking command in 'F:\dev\colcon_ws\src\lunabotics2021\build\lunabotics2021': C:\Program Files\CMake\bin\cmake.EXE F:\dev\colcon_ws\src\lunabotics2021 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=F:\dev\colcon_ws\src\lunabotics2021\install\lunabotics2021
+Invoked command in 'F:\dev\colcon_ws\src\lunabotics2021\build\lunabotics2021' returned '0': C:\Program Files\CMake\bin\cmake.EXE F:\dev\colcon_ws\src\lunabotics2021 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=F:\dev\colcon_ws\src\lunabotics2021\install\lunabotics2021
+Invoking command in 'F:\dev\colcon_ws\src\lunabotics2021\build\lunabotics2021': CL=/MP C:\Program Files\CMake\bin\cmake.EXE --build F:\dev\colcon_ws\src\lunabotics2021\build\lunabotics2021 --config Release
+Invoked command in 'F:\dev\colcon_ws\src\lunabotics2021\build\lunabotics2021' returned '1': CL=/MP C:\Program Files\CMake\bin\cmake.EXE --build F:\dev\colcon_ws\src\lunabotics2021\build\lunabotics2021 --config Release
