@@ -23,24 +23,18 @@ find_package(std_msgs REQUIRED)
 
 # STEP 2: ADD EXECUTABLE AND AMENT DEPENDENCIES/////////////////
 
-add_executable(hello src/hello.cpp)
-ament_target_dependencies(hello rclcpp std_msgs)
+#add_executable(hello src/hello.cpp)
+#ament_target_dependencies(hello rclcpp std_msgs)
 
-add_executable(listen src/listen.cpp)
-ament_target_dependencies(listen rclcpp std_msgs)
 
-target_include_directories(hello PUBLIC
-	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE::include>)
+#target_include_directories(hello PUBLIC
+#	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+#  $<INSTALL_INTERFACE::include>)
   
-target_include_directories(listen PUBLIC
-	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-	$<INSTALL_INTERFACE::include>)
 
 # STEP 3: ADD INSTALL///////////////////////////////////////////
 
-install(TARGETS hello DESTINATION lib/${PROJECT_NAME})
-install(TARGETS listen DESTINATION lib/${PROJECT_NAME})
+#install(TARGETS hello DESTINATION lib/${PROJECT_NAME})
 
 #////////////////////////////////////////////////////////////////
 
