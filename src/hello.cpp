@@ -17,7 +17,6 @@ class Hello : public rclcpp::Node
     }
 
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher;
-
 };
 
 int main(int argc, char * argv[])
