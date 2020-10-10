@@ -44,6 +44,13 @@ install(TARGETS listen DESTINATION lib/${PROJECT_NAME})
 
 #////////////////////////////////////////////////////////////////
 
+if (${CMAKE_LIBRARY_ARCHITECTURE} STREQUAL "arm-linux-gnueabihf") # Jetson TK1 / Pi
+
+  target_link_libraries(hello /home/$ENV{USERNAME}/catkin_ws/src/phoenix-template/lib/x86-64/libCTRE_Phoenix.a)
+
+else()
+
+endif()
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
