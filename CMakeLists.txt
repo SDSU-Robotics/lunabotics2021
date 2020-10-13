@@ -60,9 +60,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-target_link_libraries(hello F:/dev/colcon_ws/src/lunabotics2021/lib/x86-64/libCTRE_Phoenix.a)
-target_link_libraries(hello F:/dev/colcon_ws/src/lunabotics2021/lib/x86-64/libCTRE_PhoenixCanutils.a)
-target_link_libraries(hello F:/dev/colcon_ws/src/lunabotics2021/lib/x86-64/libCTRE_PhoenixCCI.a)
-target_link_libraries(hello F:/dev/colcon_ws/src/lunabotics2021/lib/x86-64/libCTRE_PhoenixPlatformLinuxSocketCan.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_Phoenix.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixCanutils.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixCCI.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixPlatformLinuxSocketCan.a)
 
 ament_package()
