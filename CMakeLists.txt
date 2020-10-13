@@ -15,11 +15,14 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+#set(phoenix_DIR "F:/dev/colcon_ws/src/lunabotics2021/include/ctre")
+
 #////////////////////////////////////////////////////////////////
 # STEP 1: ADD DEPENDENCIES///////////////////////////////////////
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+#find_package(phoenix REQUIRED)
 
 # STEP 2: ADD EXECUTABLE AND AMENT DEPENDENCIES/////////////////
 
@@ -44,13 +47,7 @@ install(TARGETS listen DESTINATION lib/${PROJECT_NAME})
 
 #////////////////////////////////////////////////////////////////
 
-if (${CMAKE_LIBRARY_ARCHITECTURE} STREQUAL "arm-linux-gnueabihf") # Jetson TK1 / Pi
 
-  target_link_libraries(hello /home/$ENV{USERNAME}/catkin_ws/src/phoenix-template/lib/x86-64/libCTRE_Phoenix.a)
-
-else()
-
-endif()
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -62,5 +59,10 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+target_link_libraries(hello F:/dev/colcon_ws/src/lunabotics2021/lib/x86-64/libCTRE_Phoenix.a)
+target_link_libraries(hello F:/dev/colcon_ws/src/lunabotics2021/lib/x86-64/libCTRE_PhoenixCanutils.a)
+target_link_libraries(hello F:/dev/colcon_ws/src/lunabotics2021/lib/x86-64/libCTRE_PhoenixCCI.a)
+target_link_libraries(hello F:/dev/colcon_ws/src/lunabotics2021/lib/x86-64/libCTRE_PhoenixPlatformLinuxSocketCan.a)
 
 ament_package()

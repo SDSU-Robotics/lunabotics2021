@@ -29,7 +29,7 @@ int main(int argc, char * argv[])
   rclcpp::init(argc, argv);
   rclcpp::Rate loopRate(10);
 
-	ctre::phoenix::platform::can::SetCANInterface("can0");
+  ctre::phoenix::platform::can::SetCANInterface("can0");
 
   while(rclcpp::ok())
   {
