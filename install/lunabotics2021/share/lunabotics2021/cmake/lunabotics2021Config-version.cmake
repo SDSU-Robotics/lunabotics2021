@@ -1,1 +1,0 @@
-F:/dev/colcon_ws/src/lunabotics2021/build/lunabotics2021/ament_cmake_core/lunabotics2021Config-version.cmake
