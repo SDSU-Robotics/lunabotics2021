@@ -1,6 +1,0 @@
-source;share\lunabotics2021\hook\cmake_prefix_path.ps1
-source;share\lunabotics2021\hook\cmake_prefix_path.bat
-source;share\lunabotics2021\hook\cmake_prefix_path.dsv
-source;share/lunabotics2021/local_setup.bat
-source;share/lunabotics2021/local_setup.dsv
-source;share/lunabotics2021/local_setup.ps1
