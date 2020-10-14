@@ -24,6 +24,9 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 #find_package(phoenix REQUIRED)
 
+include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/motion/motorcontrol/can)
+include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/platform/can)
+
 # STEP 2: ADD EXECUTABLE AND AMENT DEPENDENCIES/////////////////
 
 add_executable(hello src/hello.cpp)
@@ -47,8 +50,6 @@ install(TARGETS listen DESTINATION lib/${PROJECT_NAME})
 
 #////////////////////////////////////////////////////////////////
 
-
-
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -60,9 +61,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_Phoenix.a)
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixCanutils.a)
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixCCI.a)
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixPlatformLinuxSocketCan.a)
+#target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_Phoenix.a)
+#target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixCanutils.a)
+#target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixCCI.a)
+#starget_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixPlatformLinuxSocketCan.a)
 
 ament_package()
