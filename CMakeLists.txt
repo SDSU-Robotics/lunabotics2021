@@ -24,8 +24,8 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 #find_package(phoenix REQUIRED)
 
-include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/motion/motorcontrol/can)
-include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/platform/can)
+include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/motorcontrol)
+include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/motorcontrol/can)
 
 # STEP 2: ADD EXECUTABLE AND AMENT DEPENDENCIES/////////////////
 
@@ -61,7 +61,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-#target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_Phoenix.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/api-cpp-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_Phoenix.lib)
 #target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixCanutils.a)
 #target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixCCI.a)
 #starget_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/x86-64/libCTRE_PhoenixPlatformLinuxSocketCan.a)
