@@ -15,14 +15,11 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-#set(phoenix_DIR "F:/dev/colcon_ws/src/lunabotics2021/include/ctre")
-
 #////////////////////////////////////////////////////////////////
 # STEP 1: ADD DEPENDENCIES///////////////////////////////////////
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
-#find_package(phoenix REQUIRED)
 
 include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/motorcontrol)
 include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/motorcontrol/can)

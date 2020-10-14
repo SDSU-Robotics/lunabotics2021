@@ -572,7 +572,7 @@ public:
 	
 	//------ All Configs ----------//
     /**
-     * Configures all peristant settings.
+     * Configures all persistent settings.
      *
 	 * @param allConfigs        Object with all of the persistant settings
      * @param timeoutMs Timeout value in ms. If nonzero, function will wait for
@@ -592,7 +592,7 @@ public:
      */
     void GetAllConfigs(CANifierConfiguration &allConfigs, int timeoutMs = 50);
     /**
-     * Configures all peristant settings to defaults (overloaded so timeoutMs is 50 ms).
+     * Configures all persistent settings to defaults (overloaded so timeoutMs is 50 ms).
 	 * 
 	 * @param timeoutMs Timeout value in ms. If nonzero, function will wait for
      *            config success and report an error if it times out.

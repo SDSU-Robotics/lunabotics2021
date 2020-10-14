@@ -759,7 +759,7 @@ public:
 	
 	//------ All Configs ----------//
     /**
-     * Configures all peristant settings.
+     * Configures all persistent settings.
      *
 	 * @param allConfigs        Object with all of the persistant settings
      * @param timeoutMs
@@ -781,7 +781,7 @@ public:
      */
     virtual void GetAllConfigs(PigeonIMUConfiguration &allConfigs, int timeoutMs = 50);
     /**
-     * Configures all peristant settings to defaults.
+     * Configures all persistent settings to defaults.
      *
      * @param timeoutMs
      *              Timeout value in ms. If nonzero, function will wait for
