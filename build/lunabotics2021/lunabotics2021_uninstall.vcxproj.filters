@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\dev\colcon_ws\src\lunabotics2021\build\lunabotics2021\CMakeFiles\bee7f842411e10e619e1678dd015b142\lunabotics2021_uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\dev\colcon_ws\src\lunabotics2021\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="F:\dev\colcon_ws\src\lunabotics2021\build\lunabotics2021\CMakeFiles\lunabotics2021_uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{18BDA775-8C56-37C1-8438-C9D4D143BCE8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

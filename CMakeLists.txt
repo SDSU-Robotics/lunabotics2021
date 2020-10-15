@@ -21,9 +21,6 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
-include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/motorcontrol)
-include_directories(hello ${CMAKE_CURRENT_SOURCE_DIR}/lib/cpp/motorcontrol/can)
-
 # STEP 2: ADD EXECUTABLE AND AMENT DEPENDENCIES/////////////////
 
 add_executable(hello src/hello.cpp)

@@ -1,0 +1,224 @@
+[0.000000] (-) TimerEvent: {}
+[0.000000] (lunabotics2021) JobQueued: {'identifier': 'lunabotics2021', 'dependencies': OrderedDict()}
+[0.015000] (lunabotics2021) JobStarted: {'identifier': 'lunabotics2021'}
+[0.109000] (-) TimerEvent: {}
+[0.187000] (lunabotics2021) JobProgress: {'identifier': 'lunabotics2021', 'progress': 'cmake'}
+[0.219000] (-) TimerEvent: {}
+[0.250000] (lunabotics2021) Command: {'cmd': ['C:\\Program Files\\CMake\\bin\\cmake.EXE', 'F:\\dev\\colcon_ws\\src\\lunabotics2021', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=F:\\dev\\colcon_ws\\src\\lunabotics2021\\install\\lunabotics2021'], 'cwd': 'F:\\dev\\colcon_ws\\src\\lunabotics2021\\build\\lunabotics2021', 'env': OrderedDict([('ALLUSERSPROFILE', 'C:\\ProgramData'), ('AMENT_PREFIX_PATH', 'F:\\dev\\colcon_ws\\install\\lunabotics2021;F:\\dev\\colcon_ws\\install\\basic;F:\\dev\\ros2_foxy'), ('APPDATA', 'C:\\Users\\JoelB\\AppData\\Roaming'), ('ChocolateyInstall', 'C:\\ProgramData\\chocolatey'), ('ChocolateyLastPathUpdate', '132440800097210234'), ('CMAKE_PREFIX_PATH', 'F:\\dev\\colcon_ws\\install\\lunabotics2021;F:\\dev\\colcon_ws\\install\\basic;F:\\dev\\ros2_foxy'), ('COLCON', '1'), ('COLCON_PREFIX_PATH', 'F:\\dev\\colcon_ws\\install\\;F:\\dev\\ros2_foxy\\'), ('CommandPromptType', 'Cross'), ('CommonProgramFiles', 'C:\\Program Files\\Common Files'), ('CommonProgramFiles(x86)', 'C:\\Program Files (x86)\\Common Files'), ('CommonProgramW6432', 'C:\\Program Files\\Common Files'), ('COMPUTERNAME', 'LAPTOP-F21FPG6D'), ('ComSpec', 'C:\\WINDOWS\\system32\\cmd.exe'), ('configsetroot', 'C:\\WINDOWS\\ConfigSetRoot'), ('DevEnvDir', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\'), ('DriverData', 'C:\\Windows\\System32\\Drivers\\DriverData'), ('ExtensionSdkDir', 'C:\\Program Files (x86)\\Microsoft SDKs\\Windows Kits\\10\\ExtensionSDKs'), ('FPS_BROWSER_APP_PROFILE_STRING', 'Internet Explorer'), ('FPS_BROWSER_USER_PROFILE_STRING', 'Default'), ('Framework40Version', 'v4.0'), ('FrameworkDir', 'C:\\Windows\\Microsoft.NET\\Framework\\'), ('FrameworkDir32', 'C:\\Windows\\Microsoft.NET\\Framework\\'), ('FrameworkDir64', 'C:\\Windows\\Microsoft.NET\\Framework64\\'), ('FrameworkVersion', 'v4.0.30319'), ('FrameworkVersion32', 'v4.0.30319'), ('FrameworkVersion64', 'v4.0.30319'), ('HOMEDRIVE', 'C:'), ('HOMEPATH', '\\Users\\JoelB'), ('INCLUDE', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\ucrt;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\shared;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\um;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\winrt;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\cppwinrt'), ('JAVA_HOME', 'C:\\Program Files\\Java\\jdk-12.0.2'), ('LIB', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\lib\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.17763.0\\ucrt\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.17763.0\\um\\x64;'), ('LIBPATH', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\lib\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\lib\\x86\\store\\references;C:\\Program Files (x86)\\Windows Kits\\10\\UnionMetadata\\10.0.17763.0;C:\\Program Files (x86)\\Windows Kits\\10\\References\\10.0.17763.0;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319;'), ('LOCALAPPDATA', 'C:\\Users\\JoelB\\AppData\\Local'), ('LOGONSERVER', '\\\\LAPTOP-F21FPG6D'), ('NIEXTCCOMPILERSUPP', 'C:\\Program Files (x86)\\National Instruments\\Shared\\ExternalCompilerSupport\\C\\'), ('NUMBER_OF_PROCESSORS', '8'), ('OneDrive', 'C:\\Users\\JoelB\\OneDrive'), ('OneDriveConsumer', 'C:\\Users\\JoelB\\OneDrive'), ('OpenCV_DIR', 'C:\\opencv'), ('OS', 'Windows_NT'), ('OV_NI_PLUGIN_DIR', 'C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\'), ('Path', 'F:\\dev\\ros2_foxy\\opt\\yaml_cpp_vendor\\bin;F:\\dev\\ros2_foxy\\opt\\rviz_ogre_vendor\\bin;F:\\dev\\ros2_foxy\\opt\\rviz_assimp_vendor\\bin;F:\\dev\\ros2_foxy\\opt\\libcurl_vendor\\bin;F:\\dev\\ros2_foxy\\Scripts;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\MSBuild\\15.0\\bin\\Roslyn;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.17763.0\\x86;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\\\MSBuild\\15.0\\bin;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\Tools\\;C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\IVI Foundation\\VISA\\WinNT\\Bin;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Java\\jdk-12.0.2\\bin;C:\\Users\\JoelB\\Desktop\\Maven\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\MinGW\\bin;C:\\Program Files (x86)\\GnuWin32\\bin;E:\\World Painter\\WorldPainter;C:\\Program Files\\dotnet\\;C:\\Users\\Public\\wpilib\\2020\\frccode;C:\\ProgramData\\chocolatey\\lib\\cunit\\lib;C:\\ProgramData\\chocolatey\\lib\\tinyxml2\\lib;C:\\ProgramData\\chocolatey\\lib\\log4cxx\\lib;C:\\ProgramData\\chocolatey\\lib\\bullet\\lib;C:\\Program Files\\OpenSSL-Win64\\bin;C:\\Program Files\\Cppcheck;C:\\xmllint\\libxml2-2.9.3-win32-x86_64\\bin;F:\\dev\\ros2_foxy\\bin;F:\\QT\\5.15.0\\msvc2015_64;C:\\Python38\\Lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\JoelB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\JoelB\\Desktop\\Coding\\jdk-12.0.2_windows-x64_bin\\jdk-12.0.2;C:\\Users\\JoelB\\Desktop\\Maven\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Users\\JoelB\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs;C:\\Users\\Public\\wpilib\\2020\\frccode;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Graphviz2.38\\bin;C:\\Program Files\\OpenSSL-Win64\\bin;F:\\ROS2\\foxy\\ros2-foxy-20200807-windows-release-amd64\\ros2-windows\\bin;C:\\opencv\\opencv-3.4.6-vc16.VS2019\\opencv\\x64\\vc16\\bin;F:\\QT\\5.15.0\\msvc2015_64;;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja'), ('PATHEXT', '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'), ('PKG_CONFIG_PATH', 'F:\\dev\\ros2_foxy\\lib\\pkgconfig'), ('Platform', 'x64'), ('PROCESSOR_ARCHITECTURE', 'AMD64'), ('PROCESSOR_IDENTIFIER', 'Intel64 Family 6 Model 142 Stepping 10, GenuineIntel'), ('PROCESSOR_LEVEL', '6'), ('PROCESSOR_REVISION', '8e0a'), ('ProgramData', 'C:\\ProgramData'), ('ProgramFiles', 'C:\\Program Files'), ('ProgramFiles(x86)', 'C:\\Program Files (x86)'), ('ProgramW6432', 'C:\\Program Files'), ('PROMPT', '$P$G'), ('PSModulePath', 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'), ('PUBLIC', 'C:\\Users\\Public'), ('PYTHONPATH', 'F:\\dev\\ros2_foxy\\Lib\\site-packages'), ('QSYS_ROOTDIR', 'E:\\Quartus_Prime\\quartus\\sopc_builder\\bin'), ('QT_QPA_PLATFORM_PLUGIN_PATH', 'C:\\Python38\\Lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms'), ('QUARTUS_ROOTDIR', 'E:\\Quartus_Prime\\quartus'), ('ROS_DISTRO', 'foxy'), ('ROS_DOMAIN_ID', '12'), ('ROS_LOCALHOST_ONLY', '0'), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('SESSIONNAME', 'Console'), ('SOPC_KIT_NIOS2', 'E:\\Quartus_Prime\\nios2eds'), ('SystemDrive', 'C:'), ('SystemRoot', 'C:\\WINDOWS'), ('TEMP', 'C:\\Users\\JoelB\\AppData\\Local\\Temp'), ('TMP', 'C:\\Users\\JoelB\\AppData\\Local\\Temp'), ('UCRTVersion', '10.0.17763.0'), ('UniversalCRTSdkDir', 'C:\\Program Files (x86)\\Windows Kits\\10\\'), ('USERDOMAIN', 'LAPTOP-F21FPG6D'), ('USERDOMAIN_ROAMINGPROFILE', 'LAPTOP-F21FPG6D'), ('USERNAME', 'JoelB'), ('USERPROFILE', 'C:\\Users\\JoelB'), ('VBOX_MSI_INSTALL_PATH', 'C:\\Program Files\\Oracle\\VirtualBox\\'), ('VCIDEInstallDir', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\VC\\'), ('VCINSTALLDIR', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\'), ('VCToolsInstallDir', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\'), ('VCToolsRedistDir', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Redist\\MSVC\\14.16.27012\\'), ('VCToolsVersion', '14.16.27023'), ('VisualStudioVersion', '15.0'), ('VS150COMNTOOLS', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\Tools\\'), ('VSCMD_ARG_app_plat', 'Desktop'), ('VSCMD_ARG_HOST_ARCH', 'x86'), ('VSCMD_ARG_TGT_ARCH', 'x64'), ('VSCMD_VER', '15.0'), ('VSINSTALLDIR', 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\'), ('VXIPNPPATH', 'C:\\Program Files (x86)\\IVI Foundation\\VISA\\'), ('windir', 'C:\\WINDOWS'), ('WindowsLibPath', 'C:\\Program Files (x86)\\Windows Kits\\10\\UnionMetadata\\10.0.17763.0;C:\\Program Files (x86)\\Windows Kits\\10\\References\\10.0.17763.0'), ('WindowsSdkBinPath', 'C:\\Program Files (x86)\\Windows Kits\\10\\bin\\'), ('WindowsSdkDir', 'C:\\Program Files (x86)\\Windows Kits\\10\\'), ('WindowsSDKLibVersion', '10.0.17763.0\\'), ('WindowsSdkVerBinPath', 'C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.17763.0\\'), ('WindowsSDKVersion', '10.0.17763.0\\'), ('__DOTNET_ADD_32BIT', '1'), ('__DOTNET_ADD_64BIT', '1'), ('__DOTNET_PREFERRED_BITNESS', '32'), ('__VSCMD_PREINIT_PATH', 'C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\IVI Foundation\\VISA\\WinNT\\Bin;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Java\\jdk-12.0.2\\bin;C:\\Users\\JoelB\\Desktop\\Maven\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\MinGW\\bin;C:\\Program Files (x86)\\GnuWin32\\bin;E:\\World Painter\\WorldPainter;C:\\Program Files\\dotnet\\;C:\\Users\\Public\\wpilib\\2020\\frccode;C:\\ProgramData\\chocolatey\\lib\\cunit\\lib;C:\\ProgramData\\chocolatey\\lib\\tinyxml2\\lib;C:\\ProgramData\\chocolatey\\lib\\log4cxx\\lib;C:\\ProgramData\\chocolatey\\lib\\bullet\\lib;C:\\Program Files\\OpenSSL-Win64\\bin;C:\\Program Files\\Cppcheck;C:\\xmllint\\libxml2-2.9.3-win32-x86_64\\bin;F:\\dev\\ros2_foxy\\bin;F:\\QT\\5.15.0\\msvc2015_64;C:\\Python38\\Lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\JoelB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\JoelB\\Desktop\\Coding\\jdk-12.0.2_windows-x64_bin\\jdk-12.0.2;C:\\Users\\JoelB\\Desktop\\Maven\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Users\\JoelB\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs;C:\\Users\\Public\\wpilib\\2020\\frccode;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Graphviz2.38\\bin;C:\\Program Files\\OpenSSL-Win64\\bin;F:\\ROS2\\foxy\\ros2-foxy-20200807-windows-release-amd64\\ros2-windows\\bin;C:\\opencv\\opencv-3.4.6-vc16.VS2019\\opencv\\x64\\vc16\\bin;F:\\QT\\5.15.0\\msvc2015_64;')]), 'shell': False}
+[0.297000] (lunabotics2021) StdoutLine: {'line': b'-- Selecting Windows SDK version 10.0.17763.0 to target Windows 10.0.18363.\n'}
+[0.312000] (lunabotics2021) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.6 (F:/dev/ros2_foxy/share/ament_cmake/cmake)\n'}
+[0.328000] (-) TimerEvent: {}
+[0.359000] (lunabotics2021) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: C:/Python38/python.exe\n'}
+[0.437000] (-) TimerEvent: {}
+[0.547000] (-) TimerEvent: {}
+[0.656000] (-) TimerEvent: {}
+[0.765000] (-) TimerEvent: {}
+[0.875000] (-) TimerEvent: {}
+[0.890000] (lunabotics2021) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.984000] (-) TimerEvent: {}
+[1.094000] (-) TimerEvent: {}
+[1.203000] (-) TimerEvent: {}
+[1.312000] (-) TimerEvent: {}
+[1.328000] (lunabotics2021) StdoutLine: {'line': b'-- Found rclcpp: 2.1.0 (F:/dev/ros2_foxy/share/rclcpp/cmake)\n'}
+[1.375000] (lunabotics2021) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.390000] (lunabotics2021) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.0.1 (F:/dev/ros2_foxy/share/rosidl_adapter/cmake)\n'}
+[1.422000] (-) TimerEvent: {}
+[1.531000] (-) TimerEvent: {}
+[1.640000] (-) TimerEvent: {}
+[1.750000] (-) TimerEvent: {}
+[1.859000] (-) TimerEvent: {}
+[1.969000] (-) TimerEvent: {}
+[1.984000] (lunabotics2021) StdoutLine: {'line': b'-- Could not find RTI Connext - skipping rosidl_typesupport_connext_c\n'}
+[2.015000] (lunabotics2021) StdoutLine: {'line': b'-- Could not find RTI Connext - skipping rosidl_typesupport_connext_cpp\n'}
+[2.078000] (-) TimerEvent: {}
+[2.187000] (-) TimerEvent: {}
+[2.250000] (lunabotics2021) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_connext_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.297000] (-) TimerEvent: {}
+[2.344000] (lunabotics2021) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.1 (F:/dev/ros2_foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.359000] (lunabotics2021) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.406000] (-) TimerEvent: {}
+[2.500000] (lunabotics2021) StdoutLine: {'line': b'-- Found std_msgs: 2.0.3 (F:/dev/ros2_foxy/share/std_msgs/cmake)\n'}
+[2.515000] (-) TimerEvent: {}
+[2.625000] (-) TimerEvent: {}
+[2.703000] (lunabotics2021) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.5 (F:/dev/ros2_foxy/share/ament_lint_auto/cmake)\n'}
+[2.734000] (-) TimerEvent: {}
+[2.844000] (-) TimerEvent: {}
+[2.953000] (-) TimerEvent: {}
+[3.062000] (-) TimerEvent: {}
+[3.172000] (-) TimerEvent: {}
+[3.281000] (-) TimerEvent: {}
+[3.390000] (-) TimerEvent: {}
+[3.500000] (-) TimerEvent: {}
+[3.609000] (-) TimerEvent: {}
+[3.719000] (-) TimerEvent: {}
+[3.828000] (-) TimerEvent: {}
+[3.937000] (-) TimerEvent: {}
+[4.047000] (-) TimerEvent: {}
+[4.125000] (lunabotics2021) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.156000] (-) TimerEvent: {}
+[4.265000] (-) TimerEvent: {}
+[4.375000] (-) TimerEvent: {}
+[4.484000] (-) TimerEvent: {}
+[4.594000] (-) TimerEvent: {}
+[4.703000] (-) TimerEvent: {}
+[4.812000] (lunabotics2021) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.812000] (-) TimerEvent: {}
+[4.812000] (lunabotics2021) StdoutLine: {'line': b'-- Configured cppcheck include dirs: F:/dev/colcon_ws/src/lunabotics2021/hello;F:/dev/colcon_ws/src/lunabotics2021/include/ctre/phoenix;$<BUILD_INTERFACE:F:/dev/colcon_ws/src/lunabotics2021/include>\n'}
+[4.812000] (lunabotics2021) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.922000] (-) TimerEvent: {}
+[5.031000] (-) TimerEvent: {}
+[5.140000] (-) TimerEvent: {}
+[5.172000] (lunabotics2021) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.172000] (lunabotics2021) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.219000] (lunabotics2021) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.250000] (-) TimerEvent: {}
+[5.312000] (lunabotics2021) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.359000] (-) TimerEvent: {}
+[5.359000] (lunabotics2021) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[5.469000] (-) TimerEvent: {}
+[5.578000] (-) TimerEvent: {}
+[5.687000] (-) TimerEvent: {}
+[5.719000] (lunabotics2021) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.719000] (lunabotics2021) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.765000] (lunabotics2021) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.797000] (-) TimerEvent: {}
+[5.906000] (-) TimerEvent: {}
+[6.015000] (-) TimerEvent: {}
+[6.015000] (lunabotics2021) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.125000] (-) TimerEvent: {}
+[6.234000] (-) TimerEvent: {}
+[6.344000] (-) TimerEvent: {}
+[6.453000] (-) TimerEvent: {}
+[6.609000] (-) TimerEvent: {}
+[6.719000] (-) TimerEvent: {}
+[6.828000] (-) TimerEvent: {}
+[6.937000] (-) TimerEvent: {}
+[7.047000] (-) TimerEvent: {}
+[7.156000] (-) TimerEvent: {}
+[7.265000] (-) TimerEvent: {}
+[7.375000] (-) TimerEvent: {}
+[7.484000] (-) TimerEvent: {}
+[7.594000] (-) TimerEvent: {}
+[7.703000] (-) TimerEvent: {}
+[7.812000] (-) TimerEvent: {}
+[7.922000] (-) TimerEvent: {}
+[8.031000] (-) TimerEvent: {}
+[8.140000] (-) TimerEvent: {}
+[8.250000] (-) TimerEvent: {}
+[8.359000] (-) TimerEvent: {}
+[8.469000] (-) TimerEvent: {}
+[8.578000] (-) TimerEvent: {}
+[8.625000] (lunabotics2021) StdoutLine: {'line': b'-- Generating done\n'}
+[8.687000] (-) TimerEvent: {}
+[8.781000] (lunabotics2021) StdoutLine: {'line': b'-- Build files have been written to: F:/dev/colcon_ws/src/lunabotics2021/build/lunabotics2021\n'}
+[8.781000] (lunabotics2021) CommandEnded: {'returncode': 0}
+[8.781000] (lunabotics2021) JobProgress: {'identifier': 'lunabotics2021', 'progress': 'build'}
+[8.781000] (lunabotics2021) Command: {'cmd': ['C:\\Program Files\\CMake\\bin\\cmake.EXE', '--build', 'F:\\dev\\colcon_ws\\src\\lunabotics2021\\build\\lunabotics2021', '--config', 'Release'], 'cwd': 'F:\\dev\\colcon_ws\\src\\lunabotics2021\\build\\lunabotics2021', 'env': {'ALLUSERSPROFILE': 'C:\\ProgramData', 'AMENT_PREFIX_PATH': 'F:\\dev\\colcon_ws\\install\\lunabotics2021;F:\\dev\\colcon_ws\\install\\basic;F:\\dev\\ros2_foxy', 'APPDATA': 'C:\\Users\\JoelB\\AppData\\Roaming', 'ChocolateyInstall': 'C:\\ProgramData\\chocolatey', 'ChocolateyLastPathUpdate': '132440800097210234', 'CMAKE_PREFIX_PATH': 'F:\\dev\\colcon_ws\\install\\lunabotics2021;F:\\dev\\colcon_ws\\install\\basic;F:\\dev\\ros2_foxy', 'COLCON': '1', 'COLCON_PREFIX_PATH': 'F:\\dev\\colcon_ws\\install\\;F:\\dev\\ros2_foxy\\', 'CommandPromptType': 'Cross', 'CommonProgramFiles': 'C:\\Program Files\\Common Files', 'CommonProgramFiles(x86)': 'C:\\Program Files (x86)\\Common Files', 'CommonProgramW6432': 'C:\\Program Files\\Common Files', 'COMPUTERNAME': 'LAPTOP-F21FPG6D', 'ComSpec': 'C:\\WINDOWS\\system32\\cmd.exe', 'configsetroot': 'C:\\WINDOWS\\ConfigSetRoot', 'DevEnvDir': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\', 'DriverData': 'C:\\Windows\\System32\\Drivers\\DriverData', 'ExtensionSdkDir': 'C:\\Program Files (x86)\\Microsoft SDKs\\Windows Kits\\10\\ExtensionSDKs', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'Framework40Version': 'v4.0', 'FrameworkDir': 'C:\\Windows\\Microsoft.NET\\Framework\\', 'FrameworkDir32': 'C:\\Windows\\Microsoft.NET\\Framework\\', 'FrameworkDir64': 'C:\\Windows\\Microsoft.NET\\Framework64\\', 'FrameworkVersion': 'v4.0.30319', 'FrameworkVersion32': 'v4.0.30319', 'FrameworkVersion64': 'v4.0.30319', 'HOMEDRIVE': 'C:', 'HOMEPATH': '\\Users\\JoelB', 'INCLUDE': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\include;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\ucrt;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\shared;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\um;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\winrt;C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.17763.0\\cppwinrt', 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-12.0.2', 'LIB': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\lib\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.17763.0\\ucrt\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\lib\\10.0.17763.0\\um\\x64;', 'LIBPATH': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\lib\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\lib\\x86\\store\\references;C:\\Program Files (x86)\\Windows Kits\\10\\UnionMetadata\\10.0.17763.0;C:\\Program Files (x86)\\Windows Kits\\10\\References\\10.0.17763.0;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319;', 'LOCALAPPDATA': 'C:\\Users\\JoelB\\AppData\\Local', 'LOGONSERVER': '\\\\LAPTOP-F21FPG6D', 'NIEXTCCOMPILERSUPP': 'C:\\Program Files (x86)\\National Instruments\\Shared\\ExternalCompilerSupport\\C\\', 'NUMBER_OF_PROCESSORS': '8', 'OneDrive': 'C:\\Users\\JoelB\\OneDrive', 'OneDriveConsumer': 'C:\\Users\\JoelB\\OneDrive', 'OpenCV_DIR': 'C:\\opencv', 'OS': 'Windows_NT', 'OV_NI_PLUGIN_DIR': 'C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\', 'Path': 'F:\\dev\\ros2_foxy\\opt\\yaml_cpp_vendor\\bin;F:\\dev\\ros2_foxy\\opt\\rviz_ogre_vendor\\bin;F:\\dev\\ros2_foxy\\opt\\rviz_assimp_vendor\\bin;F:\\dev\\ros2_foxy\\opt\\libcurl_vendor\\bin;F:\\dev\\ros2_foxy\\Scripts;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x64;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\MSBuild\\15.0\\bin\\Roslyn;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.17763.0\\x86;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x86;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\\\MSBuild\\15.0\\bin;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\Tools\\;C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\IVI Foundation\\VISA\\WinNT\\Bin;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Java\\jdk-12.0.2\\bin;C:\\Users\\JoelB\\Desktop\\Maven\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\MinGW\\bin;C:\\Program Files (x86)\\GnuWin32\\bin;E:\\World Painter\\WorldPainter;C:\\Program Files\\dotnet\\;C:\\Users\\Public\\wpilib\\2020\\frccode;C:\\ProgramData\\chocolatey\\lib\\cunit\\lib;C:\\ProgramData\\chocolatey\\lib\\tinyxml2\\lib;C:\\ProgramData\\chocolatey\\lib\\log4cxx\\lib;C:\\ProgramData\\chocolatey\\lib\\bullet\\lib;C:\\Program Files\\OpenSSL-Win64\\bin;C:\\Program Files\\Cppcheck;C:\\xmllint\\libxml2-2.9.3-win32-x86_64\\bin;F:\\dev\\ros2_foxy\\bin;F:\\QT\\5.15.0\\msvc2015_64;C:\\Python38\\Lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\JoelB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\JoelB\\Desktop\\Coding\\jdk-12.0.2_windows-x64_bin\\jdk-12.0.2;C:\\Users\\JoelB\\Desktop\\Maven\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Users\\JoelB\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs;C:\\Users\\Public\\wpilib\\2020\\frccode;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Graphviz2.38\\bin;C:\\Program Files\\OpenSSL-Win64\\bin;F:\\ROS2\\foxy\\ros2-foxy-20200807-windows-release-amd64\\ros2-windows\\bin;C:\\opencv\\opencv-3.4.6-vc16.VS2019\\opencv\\x64\\vc16\\bin;F:\\QT\\5.15.0\\msvc2015_64;;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin;C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW', 'PKG_CONFIG_PATH': 'F:\\dev\\ros2_foxy\\lib\\pkgconfig', 'Platform': 'x64', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 142 Stepping 10, GenuineIntel', 'PROCESSOR_LEVEL': '6', 'PROCESSOR_REVISION': '8e0a', 'ProgramData': 'C:\\ProgramData', 'ProgramFiles': 'C:\\Program Files', 'ProgramFiles(x86)': 'C:\\Program Files (x86)', 'ProgramW6432': 'C:\\Program Files', 'PROMPT': '$P$G', 'PSModulePath': 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules', 'PUBLIC': 'C:\\Users\\Public', 'PYTHONPATH': 'F:\\dev\\ros2_foxy\\Lib\\site-packages', 'QSYS_ROOTDIR': 'E:\\Quartus_Prime\\quartus\\sopc_builder\\bin', 'QT_QPA_PLATFORM_PLUGIN_PATH': 'C:\\Python38\\Lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms', 'QUARTUS_ROOTDIR': 'E:\\Quartus_Prime\\quartus', 'ROS_DISTRO': 'foxy', 'ROS_DOMAIN_ID': '12', 'ROS_LOCALHOST_ONLY': '0', 'ROS_PYTHON_VERSION': '3', 'ROS_VERSION': '2', 'SESSIONNAME': 'Console', 'SOPC_KIT_NIOS2': 'E:\\Quartus_Prime\\nios2eds', 'SystemDrive': 'C:', 'SystemRoot': 'C:\\WINDOWS', 'TEMP': 'C:\\Users\\JoelB\\AppData\\Local\\Temp', 'TMP': 'C:\\Users\\JoelB\\AppData\\Local\\Temp', 'UCRTVersion': '10.0.17763.0', 'UniversalCRTSdkDir': 'C:\\Program Files (x86)\\Windows Kits\\10\\', 'USERDOMAIN': 'LAPTOP-F21FPG6D', 'USERDOMAIN_ROAMINGPROFILE': 'LAPTOP-F21FPG6D', 'USERNAME': 'JoelB', 'USERPROFILE': 'C:\\Users\\JoelB', 'VBOX_MSI_INSTALL_PATH': 'C:\\Program Files\\Oracle\\VirtualBox\\', 'VCIDEInstallDir': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\IDE\\VC\\', 'VCINSTALLDIR': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\', 'VCToolsInstallDir': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Tools\\MSVC\\14.16.27023\\', 'VCToolsRedistDir': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC\\Redist\\MSVC\\14.16.27012\\', 'VCToolsVersion': '14.16.27023', 'VisualStudioVersion': '15.0', 'VS150COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\Common7\\Tools\\', 'VSCMD_ARG_app_plat': 'Desktop', 'VSCMD_ARG_HOST_ARCH': 'x86', 'VSCMD_ARG_TGT_ARCH': 'x64', 'VSCMD_VER': '15.0', 'VSINSTALLDIR': 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\', 'VXIPNPPATH': 'C:\\Program Files (x86)\\IVI Foundation\\VISA\\', 'windir': 'C:\\WINDOWS', 'WindowsLibPath': 'C:\\Program Files (x86)\\Windows Kits\\10\\UnionMetadata\\10.0.17763.0;C:\\Program Files (x86)\\Windows Kits\\10\\References\\10.0.17763.0', 'WindowsSdkBinPath': 'C:\\Program Files (x86)\\Windows Kits\\10\\bin\\', 'WindowsSdkDir': 'C:\\Program Files (x86)\\Windows Kits\\10\\', 'WindowsSDKLibVersion': '10.0.17763.0\\', 'WindowsSdkVerBinPath': 'C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.17763.0\\', 'WindowsSDKVersion': '10.0.17763.0\\', '__DOTNET_ADD_32BIT': '1', '__DOTNET_ADD_64BIT': '1', '__DOTNET_PREFERRED_BITNESS': '32', '__VSCMD_PREINIT_PATH': 'C:\\Program Files\\National Instruments\\Shared\\OpenVINO\\;C:\\Python38\\Scripts\\;C:\\Python38\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\IVI Foundation\\VISA\\WinNT\\Bin;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Java\\jdk-12.0.2\\bin;C:\\Users\\JoelB\\Desktop\\Maven\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\CMake\\bin;C:\\MinGW\\bin;C:\\Program Files (x86)\\GnuWin32\\bin;E:\\World Painter\\WorldPainter;C:\\Program Files\\dotnet\\;C:\\Users\\Public\\wpilib\\2020\\frccode;C:\\ProgramData\\chocolatey\\lib\\cunit\\lib;C:\\ProgramData\\chocolatey\\lib\\tinyxml2\\lib;C:\\ProgramData\\chocolatey\\lib\\log4cxx\\lib;C:\\ProgramData\\chocolatey\\lib\\bullet\\lib;C:\\Program Files\\OpenSSL-Win64\\bin;C:\\Program Files\\Cppcheck;C:\\xmllint\\libxml2-2.9.3-win32-x86_64\\bin;F:\\dev\\ros2_foxy\\bin;F:\\QT\\5.15.0\\msvc2015_64;C:\\Python38\\Lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\JoelB\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\JoelB\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\JoelB\\Desktop\\Coding\\jdk-12.0.2_windows-x64_bin\\jdk-12.0.2;C:\\Users\\JoelB\\Desktop\\Maven\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin;C:\\Users\\JoelB\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs;C:\\Users\\Public\\wpilib\\2020\\frccode;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Graphviz2.38\\bin;C:\\Program Files\\OpenSSL-Win64\\bin;F:\\ROS2\\foxy\\ros2-foxy-20200807-windows-release-amd64\\ros2-windows\\bin;C:\\opencv\\opencv-3.4.6-vc16.VS2019\\opencv\\x64\\vc16\\bin;F:\\QT\\5.15.0\\msvc2015_64;', 'CL': '/MP'}, 'shell': False}
+[8.812000] (-) TimerEvent: {}
+[8.922000] (-) TimerEvent: {}
+[9.000000] (lunabotics2021) StdoutLine: {'line': b'Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework\r\n'}
+[9.000000] (lunabotics2021) StdoutLine: {'line': b'Copyright (C) Microsoft Corporation. All rights reserved.\r\n'}
+[9.000000] (lunabotics2021) StdoutLine: {'line': b'\r\n'}
+[9.031000] (-) TimerEvent: {}
+[9.140000] (-) TimerEvent: {}
+[9.250000] (-) TimerEvent: {}
+[9.359000] (-) TimerEvent: {}
+[9.469000] (-) TimerEvent: {}
+[9.578000] (-) TimerEvent: {}
+[9.687000] (-) TimerEvent: {}
+[9.797000] (-) TimerEvent: {}
+[9.906000] (-) TimerEvent: {}
+[10.015000] (-) TimerEvent: {}
+[10.125000] (-) TimerEvent: {}
+[10.234000] (-) TimerEvent: {}
+[10.344000] (-) TimerEvent: {}
+[10.453000] (-) TimerEvent: {}
+[10.562000] (-) TimerEvent: {}
+[10.672000] (-) TimerEvent: {}
+[10.719000] (lunabotics2021) StdoutLine: {'line': b'  hello.cpp\r\n'}
+[10.781000] (-) TimerEvent: {}
+[10.890000] (-) TimerEvent: {}
+[11.000000] (-) TimerEvent: {}
+[11.109000] (-) TimerEvent: {}
+[11.219000] (-) TimerEvent: {}
+[11.328000] (-) TimerEvent: {}
+[11.437000] (-) TimerEvent: {}
+[11.547000] (-) TimerEvent: {}
+[11.656000] (-) TimerEvent: {}
+[11.765000] (-) TimerEvent: {}
+[11.875000] (-) TimerEvent: {}
+[11.984000] (-) TimerEvent: {}
+[12.094000] (-) TimerEvent: {}
+[12.203000] (-) TimerEvent: {}
+[12.312000] (-) TimerEvent: {}
+[12.422000] (-) TimerEvent: {}
+[12.531000] (-) TimerEvent: {}
+[12.640000] (-) TimerEvent: {}
+[12.750000] (-) TimerEvent: {}
+[12.859000] (-) TimerEvent: {}
+[12.969000] (-) TimerEvent: {}
+[13.078000] (-) TimerEvent: {}
+[13.187000] (-) TimerEvent: {}
+[13.297000] (-) TimerEvent: {}
+[13.406000] (-) TimerEvent: {}
+[13.515000] (-) TimerEvent: {}
+[13.625000] (-) TimerEvent: {}
+[13.734000] (-) TimerEvent: {}
+[13.844000] (-) TimerEvent: {}
+[13.953000] (-) TimerEvent: {}
+[14.062000] (-) TimerEvent: {}
+[14.172000] (-) TimerEvent: {}
+[14.281000] (-) TimerEvent: {}
+[14.390000] (-) TimerEvent: {}
+[14.500000] (-) TimerEvent: {}
+[14.609000] (-) TimerEvent: {}
+[14.719000] (-) TimerEvent: {}
+[14.828000] (-) TimerEvent: {}
+[14.937000] (-) TimerEvent: {}
+[15.047000] (-) TimerEvent: {}
+[15.156000] (-) TimerEvent: {}
+[15.265000] (-) TimerEvent: {}
+[15.375000] (-) TimerEvent: {}
+[15.484000] (-) TimerEvent: {}
+[15.594000] (-) TimerEvent: {}
+[15.703000] (-) TimerEvent: {}
+[15.812000] (-) TimerEvent: {}
+[15.922000] (-) TimerEvent: {}
+[16.031000] (-) TimerEvent: {}
+[16.140000] (-) TimerEvent: {}
+[16.250000] (-) TimerEvent: {}
+[16.359000] (-) TimerEvent: {}
+[16.469000] (-) TimerEvent: {}
+[16.578000] (-) TimerEvent: {}
+[16.687000] (-) TimerEvent: {}
+[16.797000] (-) TimerEvent: {}
+[16.906000] (-) TimerEvent: {}
+[17.015000] (-) TimerEvent: {}
+[17.125000] (-) TimerEvent: {}
+[17.250000] (-) TimerEvent: {}
+[17.359000] (-) TimerEvent: {}
+[17.500000] (-) TimerEvent: {}
+[17.609000] (-) TimerEvent: {}
+[17.719000] (-) TimerEvent: {}
+[17.828000] (-) TimerEvent: {}
+[17.937000] (-) TimerEvent: {}
+[18.047000] (-) TimerEvent: {}
+[18.109000] (lunabotics2021) StdoutLine: {'line': b'hello.obj : error LNK2019: unresolved external symbol "int __cdecl ctre::phoenix::platform::can::SetCANInterface(char const *)" (?SetCANInterface@can@platform@phoenix@ctre@@YAHPEBD@Z) referenced in function main [F:\\dev\\colcon_ws\\src\\lunabotics2021\\build\\lunabotics2021\\hello.vcxproj]\r\n'}
+[18.109000] (lunabotics2021) StdoutLine: {'line': b'F:\\dev\\colcon_ws\\src\\lunabotics2021\\build\\lunabotics2021\\Release\\hello.exe : fatal error LNK1120: 1 unresolved externals [F:\\dev\\colcon_ws\\src\\lunabotics2021\\build\\lunabotics2021\\hello.vcxproj]\r\n'}
+[18.156000] (-) TimerEvent: {}
+[18.265000] (-) TimerEvent: {}
+[18.375000] (-) TimerEvent: {}
+[18.484000] (-) TimerEvent: {}
+[18.594000] (-) TimerEvent: {}
+[18.703000] (-) TimerEvent: {}
+[18.812000] (-) TimerEvent: {}
+[18.875000] (lunabotics2021) StdoutLine: {'line': b'  listen.cpp\r\n'}
+[18.906000] (lunabotics2021) StdoutLine: {'line': b"F:\\dev\\colcon_ws\\src\\lunabotics2021\\src\\listen.cpp(1): fatal error C1083: Cannot open include file: 'std_msgs/msg/string.hpp': No such file or directory [F:\\dev\\colcon_ws\\src\\lunabotics2021\\build\\lunabotics2021\\listen.vcxproj]\r\n"}
+[18.922000] (-) TimerEvent: {}
+[19.031000] (-) TimerEvent: {}
+[19.140000] (-) TimerEvent: {}
+[19.250000] (-) TimerEvent: {}
+[19.297000] (lunabotics2021) CommandEnded: {'returncode': 1}
+[19.297000] (lunabotics2021) JobEnded: {'identifier': 'lunabotics2021', 'rc': 1}
+[19.500000] (-) TimerEvent: {}
+[19.500000] (-) EventReactorShutdown: {}

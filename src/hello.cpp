@@ -20,7 +20,7 @@ class Hello : public rclcpp::Node
 
     }
 
-    //TalonSRX motor = 0;
+    TalonSRX talon = 1;
 
 };
 
@@ -29,7 +29,8 @@ int main(int argc, char * argv[])
   rclcpp::init(argc, argv);
   rclcpp::Rate loopRate(10);
 
-  ctre::phoenix::platform::can::SetCANInterface("can0");
+	//ctre::phoenix::platform::can::SetCANInterface("can0");
+  //ctre::phoenix::platform::can::StartAll();
 
   while(rclcpp::ok())
   {
