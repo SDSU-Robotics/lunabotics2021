@@ -2,6 +2,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "ctre/Phoenix.h"
 #include "ctre/phoenix/platform/Platform.h"
+#include "ctre/phoenix/platform/can/PlatformCAN.h"
 #include "ctre/phoenix/unmanaged/Unmanaged.h"
 
 using namespace std;
@@ -29,7 +30,7 @@ int main(int argc, char * argv[])
   rclcpp::init(argc, argv);
   rclcpp::Rate loopRate(10);
 
-	//ctre::phoenix::platform::can::SetCANInterface("can0");
+	ctre::phoenix::platform::can::SetCANInterface("can0");
   //ctre::phoenix::platform::can::StartAll();
 
   while(rclcpp::ok())

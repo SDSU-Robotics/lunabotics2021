@@ -26,21 +26,15 @@ find_package(std_msgs REQUIRED)
 add_executable(hello src/hello.cpp)
 ament_target_dependencies(hello rclcpp std_msgs)
 
-add_executable(listen src/listen.cpp)
-ament_target_dependencies(listen rclcpp std_msgs)
 
 target_include_directories(hello PUBLIC
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE::include>)
   
-target_include_directories(listen PUBLIC
-	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-	$<INSTALL_INTERFACE::include>)
 
 # STEP 3: ADD INSTALL///////////////////////////////////////////
 
 install(TARGETS hello DESTINATION lib/${PROJECT_NAME})
-install(TARGETS listen DESTINATION lib/${PROJECT_NAME})
 
 #////////////////////////////////////////////////////////////////
 
@@ -59,5 +53,8 @@ target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/api-cpp-5.18.3-windowsx86-64
 target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/core-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_PhoenixCore.lib)
 target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/cci-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_PhoenixCCI.lib)
 target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/wpiapi-cpp-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_Phoenix_WPI.lib)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/platform-stub-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_PhoenixPlatform.lib)
+
+#c:\users\user\releases
 
 ament_package()
