@@ -3,8 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "F:\\dev\\ros2_foxy\\include\\**",
-                "F:\\dev\\colcon_ws\\src\\lunabotics2021\\include\\ctre\\phoenix\\**",
+                "C:\\dev\\ros2_foxy\\include\\**",
+                "C:\\dev\\colcon_ws\\src\\lunabotics2021\\include\\ctre\\phoenix\\**",
                 "${workspaceFolder}/include"
             ],
             "defines": [
