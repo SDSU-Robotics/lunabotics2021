@@ -18,14 +18,19 @@ class Hello : public rclcpp::Node
   public:
     Hello() : Node("pub_hello")
     {
-      subscriber = this->create_subscription<geometry_msgs::msg::Twist>(
-        "hello_topic", 10, std::bind(&Hello::topic_callback, this, _1));
+
+      std::function<void(const geometry_msgs::msg::Twist::SharedPtr msg)> fcn = std::bind(Hello::topic_callback, std::placeholders::_1, "topic");
+
+      //subscriber = this->create_subscription<geometry_msgs::msg::Twist>(
+        //"hello_topic", 10, std::bind(&Hello::topic_callback, this, _1));
       
       RCLCPP_INFO(this->get_logger(), "Publishing Hello");
 
     }
 
     private:
+
+      TalonSRX talon = 1;
 
     void topic_callback(const geometry_msgs::msg::Twist msg) const
     {
@@ -39,17 +44,12 @@ class Hello : public rclcpp::Node
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
-  //rclcpp::Rate loopRate(10);
-
-  TalonSRX talon = 1;
 
 	ctre::phoenix::platform::can::SetCANInterface("can0");
 
   while(rclcpp::ok())
   {
     rclcpp::spin(std::make_shared<Hello>());
-
-    //loopRate.sleep();
   }
   
   rclcpp::shutdown();
