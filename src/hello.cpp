@@ -19,7 +19,10 @@ class Hello : public rclcpp::Node
     Hello() : Node("pub_hello")
     {
 
-      std::function<void(const geometry_msgs::msg::Twist::SharedPtr msg)> fcn = std::bind(Hello::topic_callback, std::placeholders::_1, "topic");
+      std::function<void(const geometry_msgs::msg::Twist::SharedPtr)> callback = std::bind(&Hello::topic_callback,
+         std::placeholders::_1, "topic_name");
+
+      //std::function<void(const geometry_msgs::msg::Twist::SharedPtr msg)> fcn = std::bind(topic_callback, std::placeholders::_1, "topic");
 
       //subscriber = this->create_subscription<geometry_msgs::msg::Twist>(
         //"hello_topic", 10, std::bind(&Hello::topic_callback, this, _1));
@@ -30,15 +33,15 @@ class Hello : public rclcpp::Node
 
     private:
 
+      void topic_callback(const geometry_msgs::msg::Twist msg) const
+      {
+        RCLCPP_INFO(this->get_logger(), "I heard");
+      }
+
+      rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscriber;
+
       TalonSRX talon = 1;
 
-    void topic_callback(const geometry_msgs::msg::Twist msg) const
-    {
-      RCLCPP_INFO(this->get_logger(), "I heard");
-    }
-
-
-    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscriber;
 };
 
 int main(int argc, char * argv[])

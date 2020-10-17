@@ -55,4 +55,6 @@ target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/cci-5.18.3-windowsx86-64/win
 target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/wpiapi-cpp-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_Phoenix_WPI.lib)
 target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/platform-stub-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_PhoenixPlatform.lib)
 
+#Add dll folder to environment variables
+
 ament_package()
