@@ -20,11 +20,12 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # STEP 2: ADD EXECUTABLE AND AMENT DEPENDENCIES/////////////////
 
 add_executable(hello src/hello.cpp)
-ament_target_dependencies(hello rclcpp std_msgs)
+ament_target_dependencies(hello rclcpp std_msgs geometry_msgs)
 
 
 target_include_directories(hello PUBLIC

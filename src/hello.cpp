@@ -4,6 +4,9 @@
 #include "ctre/phoenix/platform/Platform.h"
 #include "ctre/phoenix/platform/can/PlatformCAN.h"
 #include "ctre/phoenix/unmanaged/Unmanaged.h"
+#include <string>
+#include "rclcpp/node.hpp"
+#include "ctre/phoenix/MotorControl/ControlMode.h"
 
 using namespace std;
 using namespace ctre::phoenix;
@@ -18,29 +21,22 @@ class Hello : public rclcpp::Node
   public:
     Hello() : Node("pub_hello")
     {
-
-      std::function<void(const geometry_msgs::msg::Twist::SharedPtr)> callback = std::bind(&Hello::topic_callback,
-         std::placeholders::_1, "topic_name");
-
-      //std::function<void(const geometry_msgs::msg::Twist::SharedPtr msg)> fcn = std::bind(topic_callback, std::placeholders::_1, "topic");
-
-      //subscriber = this->create_subscription<geometry_msgs::msg::Twist>(
-        //"hello_topic", 10, std::bind(&Hello::topic_callback, this, _1));
       
-      RCLCPP_INFO(this->get_logger(), "Publishing Hello");
-
+      subscriber = this->create_subscription<geometry_msgs::msg::Twist>(
+        "topic", 10, std::bind(&Hello::topic_callback, this, _1));
+      
+      RCLCPP_INFO(this->get_logger(), "Node Running");
+      
     }
 
     private:
 
-      void topic_callback(const geometry_msgs::msg::Twist msg) const
-      {
-        RCLCPP_INFO(this->get_logger(), "I heard");
-      }
+    void topic_callback(const geometry_msgs::msg::Twist::SharedPtr) const
+    {
+      RCLCPP_INFO(this->get_logger(), "I heard");
+    }
 
-      rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscriber;
-
-      TalonSRX talon = 1;
+    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscriber;
 
 };
 
@@ -48,11 +44,23 @@ int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
 
-	ctre::phoenix::platform::can::SetCANInterface("can0");
+  TalonSRX talon = 2;
+  auto node = std::make_shared<Hello>();
+
+	ctre::phoenix::platform::can::SetCANInterface("CANtact USB/CAN Device (COM4)");
+
+  talon.Set(ControlMode::PercentOutput, 1);
+  
+  while(true)
+  {
+  
+    ctre::phoenix::unmanaged::Unmanaged::FeedEnable(100);
+  }
 
   while(rclcpp::ok())
   {
-    rclcpp::spin(std::make_shared<Hello>());
+
+    rclcpp::spin(node);
   }
   
   rclcpp::shutdown();
