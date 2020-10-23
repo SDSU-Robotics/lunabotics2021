@@ -56,10 +56,10 @@ endif()
 #target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/wpiapi-cpp-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_Phoenix_WPI.lib)
 #target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/platform-stub-5.18.3-windowsx86-64/windows/x86-64/shared/CTRE_PhoenixPlatform.lib)
 
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_Phoenix.a);
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_PhoenixCanutils.a);
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_PhoenixCCI.a);
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_Phoenix.PlatformLinuxSocketCan.a);
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_Phoenix.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_PhoenixCanutils.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_PhoenixCCI.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_Phoenix.PlatformLinuxSocketCan.a)
 
 #Add dll folder to environment variables
 
