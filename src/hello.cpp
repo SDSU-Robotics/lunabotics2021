@@ -47,7 +47,7 @@ int main(int argc, char * argv[])
 
   TalonSRX talon = 2;
 
-	ctre::phoenix::platform::can::SetCANInterface("USB\Class_02&SubClass_02&Prot_01");
+	ctre::phoenix::platform::can::SetCANInterface("can0");
 
   talon.Set(ControlMode::PercentOutput, 1);
   
