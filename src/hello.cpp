@@ -43,11 +43,11 @@ class Hello : public rclcpp::Node
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
-
-  TalonSRX talon = 2;
   auto node = std::make_shared<Hello>();
 
-	ctre::phoenix::platform::can::SetCANInterface("CANtact USB/CAN Device (COM4)");
+  TalonSRX talon = 2;
+
+	ctre::phoenix::platform::can::SetCANInterface("USB\Class_02&SubClass_02&Prot_01");
 
   talon.Set(ControlMode::PercentOutput, 1);
   
