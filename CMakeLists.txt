@@ -59,7 +59,7 @@ endif()
 target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_Phoenix.a)
 target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_PhoenixCanutils.a)
 target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_PhoenixCCI.a)
-target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_Phoenix.PlatformLinuxSocketCan.a)
+target_link_libraries(hello ${CMAKE_SOURCE_DIR}/lib/raspberry/libCTRE_PhoenixPlatformLinuxSocketCan.a)
 
 #Add dll folder to environment variables
 
